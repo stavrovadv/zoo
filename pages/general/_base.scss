@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, 
+body{
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+body{
+  background-color: var(--bg);
+  color: var(--main-font);
+}
+
+:root{
+  --bg: #fff;
+  // --bg-other-pages: #fff;
+  --main-font: #333;
+  --paragraph-color: #4f4f4f;
+  --base-gradient: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
+  --bg-gray: #f2f2f2;
+  --testimonial-block: #fefefe;
+  --map-img: url("../../assets/map.svg");
+  --arrow-color: #333;
+  --tooltip: #fefefe;
+}
+
+:root.theme-dark {
+  --bg: #333;
+  --bg-other-pages: #4f4f4f;
+  --main-font: #fff;
+  --paragraph-color: #f2f2f2;
+  --bg-gray: #4f4f4f;
+  --testimonial-block: #3c3c3c;
+  --map-img: url("../../assets/map-dark-theme.svg");
+  --arrow-color: #fefefe;
+  --tooltip: #333;
+}
+
+ul, 
+ul li{
+  list-style-type: none;
+}
+
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+
+  &:focus {
+    outline: none;
+    border: none;
+  }
+}
+
+input,
+textarea {
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+img, 
+svg {
+  max-width: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper__content {
+  width: 100%;
+  flex: 1 0 auto;
+
+  @include tablets {
+    margin-top: rem(94px);
+    position: relative;
+  }
+}
+
+.section{
+  width: 100%;
+}
+
+.container {
+  width: 84%;
+  margin: 0 auto;
+
+  @include notebook {
+    width: 75%;
+  }
+
+  @include tablets {
+    width: 93%;
+  }
+}
+
+.flex-columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hidden-title {
+  position: absolute;
+  color: transparent;
+  z-index: -1;
+}
+
+.title {
+  // color: $main-font;
+  font-weight: 900;
+  font-size: rem(48px);
+  line-height: rem(56px);
+  text-align: center;
+
+  @include phones {
+    font-size: rem(36px);
+    line-height: rem(42px);
+  }
+}
+
+.subtitle {
+  font-weight: 900;
+  font-size: rem(20px);
+  line-height: rem(23px);
+  color: var(--main-font);
+
+  @include phones {
+    font-size: rem(20px);
+    line-height: rem(23px);
+  }
+}
+
+.hidden-item {
+  display: none;
+}

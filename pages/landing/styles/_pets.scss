@@ -1,0 +1,173 @@
+.pets {
+  @include notebook {
+    width: 100%;
+  }
+
+  &__container {
+    margin-top: rem(100px);
+    width: 88%;
+
+    @include notebook {
+      width: 80%;
+      margin: 0 auto;
+      margin-top: rem(100px);
+    }
+
+    @include tablets {
+      width: 100%;
+    }
+  }
+
+  &__slider {
+    margin-top: rem(35px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    @include phones {
+      margin-top: rem(31px);
+    }
+
+    .pagination {
+      margin-top: rem(30px);
+
+      @include notebook {
+        margin-top: rem(27px);
+        position: relative;
+        left: 5px;
+      }
+
+      @include tablets {
+        margin-top: rem(36px);
+        left: 0;
+      }
+
+      @include phones {
+        margin-top: rem(31px);
+
+        .pagination__range{
+          width: 76%;
+        }
+      }
+    }
+
+    .slider__btns {
+      margin-top: rem(15px);
+    }
+
+    .slider__btns .btn:first-child{
+      margin-right: rem(4px);
+    }
+
+    .slider__content {
+      width: 100%;
+    }
+  }
+
+  &-slider__wrap-list {
+    width: rem(1200px);
+    height: rem(399px);
+    // width: 71%;
+    overflow: hidden;
+
+    @include notebook {
+      width: 94%;
+      height: rem(301px);
+    }
+  }
+
+  &-slider__list {
+    transform: translateX(0px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // width: 100%;
+  }
+
+  &-slider__item {
+    // flex: 1 0 rem(278px);
+    width: 23%;
+    height: rem(399px);
+    cursor: pointer;
+
+    @include notebook {
+      // flex-basis: rem(210px);
+      height: rem(301px);
+    }
+
+    @include phones {
+      height: rem(301px);
+    }
+
+
+    // &:not(:nth-child(4n)){
+    //   margin-right: 30px;
+    // }
+
+    // @include notebook {
+    //   margin-right: rem(20px);
+    // }
+    
+    &:hover {
+      transition: .2s;
+      filter: brightness(.8);
+    
+      .slider__desc{
+        display: block;
+      }
+    }
+  }
+
+  .slider__prev, .slider__next {
+    @include tablets {
+      display: none;
+    }
+  }
+
+  &-slider__desc {
+    position: absolute;
+    bottom: rem(42px);
+
+    @include notebook {
+      width: 91%;
+      right: 0;
+      bottom: 10%;
+      padding-left: 0;
+    }
+  }
+
+  &-slider__img {
+    // width: rem(278px);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  &-slider__text {
+    padding-right: rem(76px);
+
+    @include notebook {
+      padding-right: rem(7px);
+    }
+  }
+
+  &__btn {
+    margin-top: rem(30px);
+    padding: rem(18px) rem(17px);
+
+    @include notebook {
+      margin-top: rem(31px);
+    }
+
+    @include tablets {
+      margin-top: rem(36px);
+    }
+
+    @include phones {
+      margin-top: rem(27px)
+    }
+  }
+}

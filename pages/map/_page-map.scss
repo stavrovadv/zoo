@@ -1,0 +1,194 @@
+.page-map {
+  width: 100%;
+  padding: rem(60px) 0 rem(100px);
+  background-color: var(--bg-other-pages);
+
+  @include tablets {
+    padding: rem(60px) 0 rem(76px);
+  }
+
+  @include phones {
+    padding: rem(31px) 0 rem(59px);
+    overflow: hidden;
+  }
+
+  &__container {
+    width: rem(1200px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include notebook {
+      width: 100%;
+    }
+  }
+
+  &__desc {
+    margin-top: rem(20px);
+    font-size: rem(14px);
+    line-height: rem(16px);
+    color: var(--paragraph-color);
+    width: rem(790px);
+
+    @include notebook {
+      width: 66%;
+    }
+
+    @include tablets {
+      width: 93%;
+    }
+
+    @include phones {
+      width: 88%;
+      margin-top: rem(12px);
+      font-size: rem(12px);
+      line-height: rem(14px);
+    }
+  }
+
+  &__title {
+    @include phones {
+      font-size: rem(24px);
+      line-height: rem(28px);
+    }
+  }
+
+  &__image {
+    margin-top: rem(80px);
+
+    @include notebook {
+      transform: scale(1, 1.2);
+      margin-top: rem(54px);
+      max-width: rem(792px);
+      width: 100%;
+      height: rem(388px);
+    }
+
+    @media (max-width: 870px) {
+      width: 85%;
+    }
+
+    @include tablets {
+      overflow: hidden;
+      margin-top: rem(40px);
+      max-width: rem(600px);
+      width: 100%;
+      height: rem(290px);
+    }
+
+    @include phones {
+      margin-top: rem(36px);
+      width: rem(295px);
+      height: rem(146px);
+    }
+
+    .markers__item:hover {
+      .map__tooltip {
+        display: none;
+      }
+    }
+  }
+
+  .markers {
+    @include notebook{
+      transform: scale(1.1, 0.9);
+    }
+
+    @include tablets {
+      transform: scale(1.2, 1);
+    }
+  }
+
+  .markers--eagles {
+    left: rem(133px);
+    top: rem(84px);
+
+    @include notebook {
+      left: 11%;
+      top: rem(78px);
+    }
+
+    @include tablets {
+      top: rem(30px);
+      left: 14%;
+    }
+    
+    @include phones {
+      top: rem(14px);
+      left: 15%;
+    }
+  }
+  .markers--alligator {
+    @include notebook {
+      top: rem(91px);
+      left: 20%;
+    }
+
+    @include tablets {
+      top: rem(38px);
+      left: 20%;
+    }
+
+    @include phones {
+      left: 23%;
+      top: rem(23px);
+    }
+  }
+
+  .markers--panda {
+    right: rem(229px);
+    top: rem(100px);
+
+    @include notebook {
+      right: 20%;
+      top: rem(90px);
+    }
+
+    @include tablets {
+      top: rem(34px);
+      right: 21%;
+    }
+
+    @include phones {
+      right: 22%;
+      top: 19px;
+    }
+  }
+
+  .markers--gorilla {
+    @include notebook {
+      left: 45%;
+      top: rem(163px);
+    }
+
+    @include tablets {
+      left: 42%;
+      top: rem(81px);
+    }
+
+    @include phones {
+      left: 46%;
+      top: rem(44px);
+    }
+  }
+
+  &__btn {
+    margin-top: rem(50px);
+
+    @include notebook {
+      margin-top: rem(34px);
+    }
+
+    @include tablets {
+      padding: 2%;
+    }
+
+    @include phones {
+      padding: 4% 1%;
+    }
+  }
+
+  &__address {
+    margin-top: rem(30px);
+  }
+}

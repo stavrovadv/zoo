@@ -1,0 +1,107 @@
+.about { 
+  &__content {
+    width: rem(790px);
+    margin: rem(100px) auto 0;
+
+    @include notebook {
+      width: 83%;
+    }
+
+    @include tablets {
+      width: 100%;
+    }
+
+    @include phones {
+      margin: rem(48px) auto 0;
+    }
+  }
+
+  &__title {
+    text-align: left;
+  }
+
+  &-slider {
+    margin-top: rem(30px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include phones {
+      margin-top: rem(20px);
+    }
+  }
+
+  &-slider__text {
+    color: var(--paragraph-color);
+    font-size: rem(14px);
+    line-height: rem(16px);
+  }
+
+  &-slider__img{
+    margin-top: rem(29px);
+    border-radius: 5px;
+    height: rem(323px);
+    width: rem(790px);
+    object-fit: cover;
+    object-position: center 75%;
+    cursor: pointer;
+
+    @include notebook {
+      margin-top: 2%;
+    }
+
+    @include tablets {
+      margin-top: 5%;
+    }
+
+    @include phones {
+      width: rem(300px);
+      height: rem(323px);
+      object-position: 8% center;
+      margin-top: 11%;
+    }
+
+    &:hover {
+      transition: .2s;
+      filter: brightness(.7);
+    }
+  }
+
+  &__pagination {
+    margin-top: rem(24px);
+
+    @include tablets {
+      margin-top: rem(27px);
+    }
+
+    @include phones {
+      position: relative;
+      left: rem(5px);
+      top: rem(-13px);
+      
+      .pagination__range {
+        width: 82%;
+      }
+    }
+
+  }
+
+  .btn {
+    margin-top: rem(27px);
+
+    @include notebook {
+      margin-top: 3%;
+      padding: 10px 2%;
+    }
+
+    @include tablets {
+      margin-top: 4%;
+    }
+
+    @include phones {
+      margin-top: 0;
+      position: relative;
+      left: rem(5px);
+    }
+  }
+}

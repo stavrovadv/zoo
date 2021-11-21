@@ -1,0 +1,253 @@
+.map {
+  background-color: var(--bg-gray);
+  padding: rem(100px) 0 rem(98px);
+
+  @include notebook {
+    padding-bottom: rem(102px);
+    overflow: hidden;
+  }
+
+  @include tablets {
+    padding-bottom: rem(77px);
+  }
+
+  @include phones {
+    padding-top: rem(50px);
+    padding-bottom: rem(57px);
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__tooltip {
+    display: none;
+    z-index: 1;
+  }
+
+  &__image {
+    margin-top: rem(60px);
+    width: rem(1200px);
+    height: rem(496px);
+    background: var(--map-img);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+
+    @include notebook {
+      transform: scale(1, 1.2);
+      margin-top: rem(67px);
+      width: rem(900px);
+      height: rem(428px);
+    }
+
+    @media (max-width: 870px) {
+      width: 100%;
+    }
+
+    @include tablets {
+      margin-top: rem(51px);
+      max-width: rem(600px);
+      width: 100%;
+      height: rem(290px);
+    }
+
+    @include phones {
+      margin-top: rem(32px);
+      width: 100%;
+      height: rem(146px);
+    }
+  }
+
+  &__btn {
+    margin-top: rem(38px);
+
+    @include notebook {
+      margin-top: rem(42px);
+    }
+
+    @include tablets {
+      padding: 2%;
+      margin-top: rem(32px);
+    }
+
+    @include phones {
+      padding: 4% 2%;
+      margin-top: rem(30px);
+    }
+  }
+}
+
+.markers {
+  @include notebook{
+    transform: scale(1.2, 1);
+  }
+
+  &__item {
+    position: absolute;
+    transition: .4s;
+    cursor: pointer;
+  }
+
+  &__item:hover,
+  .markers__item--active {
+    transition: .4s;
+    
+    .markers__img-block {
+      background: url("../../assets/marker-hover.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top;
+      display: block;
+      width: rem(66px);
+      height: rem(92px);
+      position: relative;
+
+      @include notebook {
+        width: rem(80px);
+        height: rem(75px);
+        background-size: contain;
+      }
+
+      @include phones {
+        width: rem(27px);
+        height: rem(47px);
+      }
+    }
+  }
+
+  &__item:hover {
+    .map__tooltip {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &--eagles {
+    top: rem(75px);
+    left: rem(120px);
+
+    @include notebook {
+      top: rem(79px);
+      left: rem(134px);
+    }
+
+    @include tablets {
+      top: rem(28px);
+      left: 14%;
+    }
+
+    @include phones {
+      top: rem(13px);
+      left: 15%;
+    }
+  }
+
+  &--alligator {
+    top: rem(102px);
+    left: rem(245px);
+
+    @include notebook {
+      top: rem(88px);
+      left: rem(209px);
+    }
+
+    @include tablets {
+      top: rem(35px);
+      left: 21%;
+    }
+
+    @include phones {
+      top: rem(20px);
+      left: 23%;
+    }
+  }
+
+  &--gorilla {
+    top: rem(190px);
+    left: rem(573px);
+
+    @include notebook {
+      top: rem(166px);
+      left: rem(415px);
+    }
+
+    @include tablets {
+      top: rem(84px);
+      left: 44%;
+    }
+
+    @include phones {
+      top: rem(43px);
+      left: 46%;
+    }
+  }
+
+  &--panda {
+    top: rem(95px);
+    right: rem(240px);
+
+    @include notebook {
+      top: rem(89px);
+      right: rem(210px);
+    }
+
+    @include tablets {
+      top: rem(33px);
+      right: 21%;
+    }
+
+    @include phones {
+      top: rem(18px);
+      right: 22%;
+    }
+  }
+
+  &__img-block {
+    background: url("../../assets/marker.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    display: block;
+    width: rem(66px);
+    height: rem(92px);
+    position: relative;
+
+    @include notebook {
+      width: rem(80px);
+      height: rem(75px);
+      background-size: contain;
+    }
+
+    @include phones {
+      width: rem(27px);
+      height: rem(47px);
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: rem(10px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: rem(43px);
+    height: rem(43px);
+    border-radius: 50%;
+    object-fit: cover;
+
+    @include notebook {
+      width: rem(35px);
+      height: rem(35px);
+    }
+
+    @include phones {
+      width: rem(18px);
+      height: rem(18px);
+      top: 10%;
+    }
+  }
+}

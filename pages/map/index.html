@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map | Online-zoo</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="wrapper__content">
+      <header class="header" id="header">
+        <div class="container flex-columns">
+          <a href="../landing/index.html" class="logo">
+            <div class="logo__text">
+              <span class="logo__bold">ZOO</span> online
+            </div>
+          </a>
+          <nav class="nav page-map__nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="../landing/index.html" class="nav__link">About</a>
+              </li>
+              <li class="nav__item">
+                <a href="../zoos/panda/" class="nav__link">Zoos</a>
+              </li>
+              <li class="nav__item nav__item--active">
+                <a href="#" class="nav__link">Map</a>
+              </li>
+              <li class="nav__item">
+                <a href="#contacts" class="nav__link">Contact Us</a>
+              </li>
+              <li class="nav__item">
+                <a href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp" class="nav__link">Design</a>
+              </li>
+            </ul>
+          </nav>
+          <label class="switch">
+            <input class="switch__checkbox" type="checkbox" name="switch">
+            <span class="round"></span>
+          </label>
+          <div class="burger-menu">
+            <div class="burger-menu__content"></div>
+          </div>
+        </div>
+      </header>
+      <main class="page-map">
+        <h1 class="hidden-title">Online Zoo</h1>
+        <div class="container page-map__container">
+          <h2 class="title page-map__title">Choose your favorite</h2>
+          <p class="page-map__desc">As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat, and we are determined to assist in all aspects, including providing veterinary support and raising much-needed emergency funds. Zoo Online saves wildlife and inspires everyone to make conservation a priority in their lives. Animals have the right to a pain-free and happy life. They have equal claim to the resources of this planet, and deserve a life of dignity and compassion.As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat.</p>
+          <div class="page-map__slider">
+            <div class="page-map__slider-content">
+              <button class="slider__prev">
+                <svg class="slider-btn__img">
+                  <use xlink:href="../../assets/arrow.svg#arr"></use>
+                </svg>
+              </button>
+              <div class="page-map__list-wrap">
+                <ul class="page-map__list">
+                  <li class="page-map__item">
+                    <img src="../../assets/animals/gorilla.jpg" alt="animal" class="page-map__img">
+                  </li>
+                  <li class="page-map__item page-map__item--active">
+                    <img src="../../assets/animals/panda.jpg" alt="animal" class="page-map__img">
+                  </li>
+                  <li class="page-map__item">
+                    <img src="../../assets/animals/alligator.jpg" alt="animal" class="page-map__img">
+                  </li>
+                  <li class="page-map__item">
+                    <img src="../../assets/animals/eagles.jpg" alt="animal" class="page-map__img">
+                  </li>
+                  <li class="page-map__item">
+                    <img src="../../assets/animals/tiger.jpg" alt="animal" class="page-map__img">
+                  </li>
+                  <li class="page-map__item">
+                    <img src="../../assets/animals/elephants.jpg" alt="animal" class="page-map__img">
+                  </li>
+                  <li class="page-map__item">
+                    <img src="../../assets/animals/lion.jpg" alt="animal" class="page-map__img">
+                  </li>
+                  <li class="page-map__item">
+                    <img src="../../assets/animals/zebra.jpg" alt="animal" class="page-map__img">
+                  </li>
+                </ul>
+              </div>
+              <button class="slider__next">
+                <svg class="slider-btn__img">
+                  <use xlink:href="../../assets/arrow.svg#arr"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="pagination page-map__pagination">
+              <div class="pagination__text"><span class="pagination__curr">02</span>08</div>
+              <input type="range" class="pagination__range" min="1" max="8" value="2">
+            </div>
+          </div>
+          <div class="map__image page-map__image">
+            <ul class="markers">
+              <li class="markers__item markers--gorilla" title="gorilla">
+                <div class="markers__img-block">
+                  <img src="../../assets/animals/gorilla.jpg" alt="map marker" class="markers__img">
+                </div>
+                <div class="map__tooltip tooltip">
+                  <img src="../../assets/animals/gorilla.jpg" alt="animal" class="tooltip__img">
+                  <div class="tooltip__desc">
+                    <div class="tooltip__animal">West End Bald Eagle</div>
+                    <p class="tooltip__text">
+                      <span class="tooltip__bold">Region:</span> on an island near Los Angeles
+                      <span class="tooltip__bold">Population:</span> more than 270 pairs in 2013
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="markers__item markers--panda markers__item--active" title="panda">
+                <div class="markers__img-block">
+                  <img src="../../assets/animals/panda.jpg" alt="map marker" class="markers__img">
+                </div>
+                <div class="map__tooltip tooltip">
+                  <img src="../../assets/animals/panda.jpg" alt="animal" class="tooltip__img">
+                  <div class="tooltip__desc">
+                    <div class="tooltip__animal">Panda</div>
+                    <p class="tooltip__text">
+                      <span class="tooltip__bold">Region:</span> on an island near Los Angeles
+                      <span class="tooltip__bold">Population:</span> more than 270 pairs in 2013
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="markers__item markers--alligator" title="alligator">
+                <div class="markers__img-block">
+                  <img src="../../assets/animals/alligator.jpg" alt="map marker" class="markers__img">
+                </div>
+                <div class="map__tooltip tooltip">
+                  <img src="../../assets/animals/alligator.jpg" alt="animal" class="tooltip__img">
+                  <div class="tooltip__desc">
+                    <div class="tooltip__animal">West End Bald Eagle</div>
+                    <p class="tooltip__text">
+                      <span class="tooltip__bold">Region:</span> on an island near Los Angeles
+                      <span class="tooltip__bold">Population:</span> more than 270 pairs in 2013
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="markers__item markers--eagles" title="eagles">
+                <div class="markers__img-block">
+                  <img src="../../assets/animals/eagles.jpg" alt="map marker" class="markers__img">
+                </div>
+                <div class="map__tooltip tooltip">
+                  <img src="../../assets/animals/eagles.jpg" alt="animal" class="tooltip__img">
+                  <div class="tooltip__desc">
+                    <div class="tooltip__animal">West End Bald Eagle</div>
+                    <p class="tooltip__text">
+                      <span class="tooltip__bold">Region:</span> on an island near Los Angeles
+                      <span class="tooltip__bold">Population:</span> more than 270 pairs in 2013
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <a href="../zoos/panda/" class="btn btn--gradient btn--watch map__btn page-map__btn">
+            <svg class="btn__img btn--watch__img">
+              <use xlink:href="../../assets/watch.svg#watch"></use>
+            </svg>
+            <span class="btn__text btn--watch__text">watch online</span>
+          </a>
+        </div>
+      </main>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__column">
+            <a href="../landing/index.html" class="logo">
+              <img class="logo__img" src="../../assets/header/logo-dark.png" alt="logo">
+            </a>
+            <h4 class="footer__title" id="contacts">Contact us</h4>
+            <form class="footer__form form">
+              <input type="text" name="name" placeholder="Name" class="form__input form__field form__row" required>
+              <input type="email" name="email" placeholder="Email" class="form__input form__field form__row" required>
+              <fieldset class="form__fieldset form__row">
+                <legend class="form__legend">Please enter your message</legend>
+                <textarea name="message" maxlength="280" rows="6" class="form__field form__textarea" required></textarea>
+              </fieldset>
+              <label class="form__row form__checbox-block">
+                <input type="checkbox" name="agree" class="form__checkbox" required>
+                <span class="form__checkbox-text">I agree to the processing of Personal Data</span>
+              </label>
+              <button type="submit" class="btn form__btn form__row">
+                <span>send</span>
+                <img class="form__arrow" src="../../assets/form-arrow.svg" alt="arrow">
+              </button>
+            </form>
+          </div>
+          <div class="footer__column footer__double-column">
+            <div class="footer__column-content">
+              <nav class="nav footer__nav">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a href="../landing/index.html" class="nav__link">About</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="../zoos/panda/" class="nav__link">Zoos</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#header" class="nav__link">Map</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp" class="nav__link">Design</a>
+                  </li>
+                </ul>
+              </nav>
+              <address class="footer__contacts contacts page-map__contacts">
+                <div class="contacts__title">ZOO Online Centre</div>
+                <div class="contacts__address page-map__address">
+                  132, Address District, Street
+                  Open Daily 10:00 am - 5:00 pm
+                </div>
+                <div class="contacts__links">
+                  <a href="tel:+7021633433" class="contacts__phone">T(702) 163-3433</a>
+                  <a href="mailto:zoo.online@gmail.com" class="contacts__email">zoo.online@gmail.com</a>
+                </div>
+              </address>
+              <ul class="social footer__social">
+                <li class="social__item">
+                  <a href="https://www.instagram.com/" class="social__link">
+                    <svg class="social__img">
+                      <use xlink:href="../../assets/social/social-sprite.svg#inst"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="https://twitter.com/" class="social__link">
+                    <svg class="social__img">
+                      <use xlink:href="../../assets/social/social-sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="https://www.youtube.com/" class="social__link">
+                    <svg class="social__img">
+                      <use xlink:href="../../assets/social/social-sprite.svg#youtube"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="https://vk.com/" class="social__link">
+                    <svg class="social__img">
+                      <use xlink:href="../../assets/social/social-sprite.svg#vk"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn--gradient footer__btn">
+              donate for volunteers
+            </a>
+          </div>
+        </div>
+        <div class="footer__copyright copyright">
+          <div class="copyright__designer">©Noora Sagnayeva</div>
+          <div class="copyright__school">©RSSchool and ©Yem Digital - 2021</div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="../theme-switcher.js"></script>
+  <script src="./slider.js"></script>
+</body>
+</html>

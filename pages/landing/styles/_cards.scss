@@ -1,0 +1,94 @@
+.cards {
+  margin-top: rem(100px);
+  background-color: var(--bg-gray);
+
+  @include tablets {
+    margin-top: rem(68px);
+  }
+
+  &__list {
+    padding: rem(100px) 0 rem(130px);
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+
+    @include notebook {
+      padding: rem(100px) 0 rem(115px);
+    }
+
+    @include tablets {
+      padding: rem(100px) 0 rem(95px);
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @include phones {
+      padding: rem(35px) 0 rem(52px);
+    }
+  }
+
+  &__item { 
+    max-width: rem(380px);
+    width: 100%;
+
+    @include tablets {
+      max-width: rem(286px);
+      width: 100%;
+    }
+
+    @include phones {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    &:not(:last-child) {
+      margin-right: rem(30px);
+
+      @include notebook {
+        max-width: rem(286px);
+        width: 100%;
+        margin-right: rem(20px);
+      }
+
+      @include tablets {
+        margin-bottom: rem(50px);
+        margin-right: 0;
+      }
+
+      @include phones {
+        max-width: 100%;
+        margin-bottom: rem(30px);
+      }
+    }
+  }
+
+  &__img {
+    width: rem(80px);
+    height: rem(80px);
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__desc {
+    margin-top: rem(15px);
+
+    @include notebook {
+      margin-top: rem(17px);
+    }
+
+    @include phones {
+      margin-top: rem(14px);
+    }
+  }
+
+  &__subtitle {
+    text-align: center;
+  }
+
+  &__text {
+    margin-top: rem(15px);
+    font-size: rem(14px);
+    line-height: rem(16px);
+    color: var(--paragraph-color);
+  }
+}

@@ -1,0 +1,48 @@
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-top: rem(25px);
+
+  @include notebook {
+    margin-top: rem(26px);
+    position: relative;
+    left: -7px;   
+  }
+
+  @include tablets {
+    left: 0;
+  }
+
+  @include phones {
+    margin-top: rem(15px);
+  }
+
+  &__item {
+    margin-right: 5px;
+    position: relative;
+  }
+}
+
+.controls__label input { display: none; /* Прячем исходный переключатель */ }
+.controls__label span {
+  position: relative; /* Относительное позиционирование */
+  display: inline-block; /* Строчно-блочный элемент */
+  width: rem(8px); height: rem(8px); /* Размеры */
+  background: #C4C4C4; /* Серый цвет фона */
+  border-radius: 50%; /* Круглый переключатель */
+  cursor: pointer;
+  transition: .3s;
+}
+
+.controls__label input:checked + span { 
+  position: relative; 
+  top: 1px;
+  width: rem(11px);
+  height: rem(11px);
+  background: var(--base-gradient);
+  cursor: pointer;
+  vertical-align: center;
+  transition: .3s;
+}

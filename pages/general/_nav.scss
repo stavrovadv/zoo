@@ -1,0 +1,52 @@
+.nav{
+  position: relative;
+  left: 2px;
+  width: 36%;
+  font-size: rem(16px);
+  line-height: rem(19px);
+
+  @include notebook {
+    width: 65%;
+  }
+
+  @include phones {
+    width: 0;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+
+    @include tablets {
+      display: none;
+    }
+  }
+
+  &__item {
+    // padding-bottom: 4px;
+    transition: .2s;
+
+    &:hover {
+      color: $gray3;
+      transition: .2s;
+      font-weight: 900;
+    }
+  }
+
+  &__item--active{
+    font-weight: 900;
+    border-bottom: 1px solid currentColor;
+
+    &:hover {
+      color: var(--main-font);
+    }
+  }
+}
+
+.landing-header {
+  .nav {
+    top: 5px;
+  }
+}

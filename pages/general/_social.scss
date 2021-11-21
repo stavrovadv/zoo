@@ -1,0 +1,42 @@
+.social {
+  display: flex;
+
+  &__item:hover{
+    transition: .2s;
+    filter: brightness(.1);
+  }
+
+  &__img {
+    width: rem(20px);
+    height: rem(20px);
+    fill: $base;
+  }
+}
+
+.aside__social {
+  position: absolute;
+  bottom: 11%;
+  flex-direction: column;
+  justify-content: center;
+
+  @include notebook {
+    bottom: 7%;
+  }
+
+  @include tablets {
+    bottom: 9%;
+    left: rem(-2px);
+  }
+
+  @include phones {
+    display: none;
+  }
+  
+  .social__item:not(:first-child) {
+    margin-top: 6px;
+
+    @include notebook {
+      margin-top: 7px;
+    }
+  }
+}

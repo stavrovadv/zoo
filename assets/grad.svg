@@ -1,0 +1,10 @@
+<svg viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient1">
+      <stop offset="14%" stop-color="#4BD8B5" />
+      <stop offset="100%" stop-color="#49D6DF" />
+    </linearGradient>
+  </defs>  
+  <circle id="circle" cx="16" cy="16" r="15.5" fill="none" stroke="url(#gradient1)"/>
+  <path id="play" d="M21 16L13.5 20.3301V11.6699L21 16Z" fill="url(#gradient1)"/>
+</svg>

@@ -1,0 +1,141 @@
+.pagination {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+  &__text {
+    font-weight: 900;
+    font-size: rem(14px);
+    line-height: rem(16px);
+    color: $gray4;
+  }
+
+  &__curr {
+    color: var(--main-font);
+    font-size: rem(24px);
+    line-height: rem(28px);
+
+    &::after{
+      content: "/";
+    }
+  }
+
+  &__range {
+    margin-top: rem(14px);
+    -webkit-appearance: none;
+    width: rem(245px);
+    height: rem(5px);
+    background: $gray4;
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+      background: var(--base-gradient);
+    }
+
+    @include phones {
+      width: rem(140px);
+    }
+  }
+
+  &__range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: rem(30px);
+    height: rem(10px);
+    background: var(--main-font);
+    cursor: pointer;
+
+    @include phones {
+      width: rem(30px);
+    }
+  }
+  
+  &__range::-moz-range-thumb {
+    width: rem(30px);
+    height: rem(10px);
+    background: var(--main-font);
+    cursor: pointer;
+
+    @include phones {
+      width: rem(30px);
+    }
+  }
+}
+
+.about__pagination {
+  padding-bottom: 10px;
+  .pagination__range::-webkit-slider-thumb {
+    width: rem(62px);
+    height: rem(10px);
+
+    @include notebook {
+      width: rem(80px);
+    }
+  }
+  
+  .pagination__range::-moz-range-thumb {
+    width: rem(62px);
+    height: rem(10px);
+
+    @include notebook {
+      width: rem(80px);
+    }
+  }
+}
+
+.pagination--intro {
+  // position: relative;
+  // left: rem(-137px);
+  // top: rem(3px);
+  position: absolute;
+  left: 30%;
+  bottom: 8%;
+
+  // @include notebook {
+  //   // top: rem(25px);
+  //   // left: 0;
+  //   // left: rem(-26px);
+  // }
+
+  // @include tablets {
+  //   left: 3%;
+  //   top: rem(28px);
+  // }
+
+  // @include phones {
+  //   left: 10%;
+  //   top: rem(6px);
+  // }
+  
+  .pagination__text {
+    color: $gray4;
+
+    @include phones {
+      position: relative;
+      top: rem(11px);
+    }
+  }
+
+  .pagination__curr {
+    color: $base;
+  }
+
+  .pagination__range::-webkit-slider-thumb {
+    background: $base;
+
+    @include phones {
+      width: rem(17px);
+    }
+  }
+  
+  .pagination__range::-moz-range-thumb {
+    background: $base;
+
+    @include phones {
+      width: rem(17px);
+    }
+  }
+}

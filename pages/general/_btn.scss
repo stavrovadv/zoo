@@ -1,0 +1,43 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.btn--watch {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  &__img {
+    border-radius: 50%;
+    border: 1px solid #fff;
+  }
+}
+
+.btn--gradient{
+  width: rem(245px);
+  background: var(--base-gradient);
+  padding: rem(12px) rem(39px);
+  font-weight: 900;
+  font-size: rem(18px);
+  line-height: rem(21px);
+  color: #fff;
+  border-radius: 3px;
+
+  @include notebook {
+    padding: 1% 2%;
+  }
+
+  .btn__img {
+    width: rem(32px);
+    height: rem(32px);
+    margin-right: 5px;
+  }
+  
+  &:hover {
+    transition: .2s;
+    filter: grayscale(.4);
+  }
+}

@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main | Online-zoo</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="wrapper__content">
+      <header class="header landing-header" id="header">
+        <div class="container flex-columns">
+          <a href="#" class="logo">
+            <div class="logo__text">
+              <span class="logo__bold">ZOO</span> online
+            </div>
+          </a>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item nav__item--active">
+                <a href="#" class="nav__link">About</a>
+              </li>
+              <li class="nav__item">
+                <a href="../zoos/panda/" class="nav__link">Zoos</a>
+              </li>
+              <li class="nav__item">
+                <a href="../map/index.html" class="nav__link">Map</a>
+              </li>
+              <li class="nav__item">
+                <a href="#contacts" class="nav__link">Contact Us</a>
+              </li>
+              <li class="nav__item">
+                <a href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp" class="nav__link">Design</a>
+              </li>
+            </ul>
+          </nav>
+          <label class="switch">
+            <input class="switch__checkbox" type="checkbox" name="switch">
+            <span class="round"></span>
+          </label>
+          <div class="burger-menu">
+            <div class="burger-menu__content"></div>
+          </div>
+        </div>
+      </header>
+      <section class="intro section">
+        <h1 class="hidden-title">Online Zoo</h1>
+        <div class="container intro__container">
+          <aside class="aside">
+            <ul class="social aside__social">
+              <li class="social__item">
+                <a href="https://www.instagram.com/" class="social__link">
+                  <svg class="social__img">
+                    <use xlink:href="../../assets/social/social-sprite.svg#inst"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="https://twitter.com/" class="social__link">
+                  <svg class="social__img">
+                    <use xlink:href="../../assets/social/social-sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="https://www.youtube.com/" class="social__link">
+                  <svg class="social__img">
+                    <use xlink:href="../../assets/social/social-sprite.svg#youtube"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="https://vk.com/" class="social__link">
+                  <svg class="social__img">
+                    <use xlink:href="../../assets/social/social-sprite.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </aside>
+          <div class="intro__content">
+            <h2 class="intro__title">Watch your favorite animal online</h2>
+            <a href="../zoos/panda/index.html" class="btn btn--gradient btn--watch intro__btn">
+              <svg class="btn__img btn--watch__img">
+                <use xlink:href="../../assets/watch.svg#watch"></use>
+              </svg>
+              <span class="btn__text btn--watch__text">watch online</span>
+            </a>
+          </div>
+        </div>
+        <div class="pagination pagination--intro">
+          <div class="pagination__text"><span class="pagination__curr">02</span>08</div>
+          <input type="range" class="pagination__range" min="1" max="8" value="2">
+        </div>
+        <div class="slider intro-slider">
+          <ul class="slider__list intro-slider__list">
+            <li class="intro-slider__item--before">
+              <div class="intro-slider__point"></div>
+            </li>
+            <li class="intro-slider__item--before">
+              <div class="intro-slider__point"></div>
+            </li>
+            <li class="slider__item intro-slider__item">
+              <img src="../../assets/animals/eagles.jpg" class="slider__img intro-slider__img"></img>
+              <div class="slider__desc intro-slider__desc">
+                <p class="slider__text intro-slider__text">Eagles</p>
+                <div class="slider__btns intro-slider__btns">
+                  <a href="../zoos/eagles/" class="slider__btn btn">
+                    <img src="../../assets/grad.svg" alt="watch" class="btn__img intro-btn__img intro-btn__img-grad">
+                    <span class="btn__text intro-btn__text text-gradient">watch online</span>
+                  </a>
+                  <a href="#" class="slider__btn btn">
+                    <svg class="btn__img intro-btn__img">
+                      <use xlink:href="../../assets/intro/donate-btn.svg#donate"></use>
+                    </svg>
+                    <span class="btn__text intro-btn__text">donate</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="slider__item intro-slider__item intro-slider__item--active">
+              <img src="../../assets/animals/panda.jpg" class="slider__img intro-slider__img"></img>
+              <div class="slider__desc intro-slider__desc">
+                <p class="slider__text intro-slider__text">Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves bamboos.</p>
+                <div class="slider__btns intro-slider__btns">
+                  <a href="../zoos/panda/" class="slider__btn btn">
+                    <img src="../../assets/grad.svg" alt="watch" class="btn__img intro-btn__img intro-btn__img-grad">
+                    <span class="btn__text intro-btn__text text-gradient">watch online</span>
+                  </a>
+                  <a href="#" class="slider__btn btn">
+                    <svg class="btn__img intro-btn__img">
+                      <use xlink:href="../../assets/intro/donate-btn.svg#donate"></use>
+                    </svg>
+                    <span class="btn__text intro-btn__text">donate</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="slider__item intro-slider__item">
+              <img src="../../assets/animals/gorilla.jpg" class="slider__img intro-slider__img"></img>
+              <div class="slider__desc intro-slider__desc">
+                <p class="slider__text intro-slider__text">Gorilla</p>
+                <div class="slider__btns intro-slider__btns">
+                  <a href="../zoos/gorilla/index.html" class="slider__btn btn ">
+                    <img src="../../assets/grad.svg" alt="watch" class="btn__img intro-btn__img intro-btn__img-grad">
+                    <span class="btn__text intro-btn__text text-gradient">watch online</span>
+                  </a>
+                  <a href="#" class="slider__btn btn">
+                    <svg class="btn__img intro-btn__img">
+                      <use xlink:href="../../assets/intro/donate-btn.svg#donate"></use>
+                    </svg>
+                    <span class="btn__text intro-btn__text">donate</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="slider__item intro-slider__item">
+              <img src="../../assets/animals/alligator.jpg" class="slider__img intro-slider__img"></img>
+              <div class="slider__desc intro-slider__desc">
+                <p class="slider__text intro-slider__text">Alligator</p>
+                <div class="slider__btns intro-slider__btns">
+                  <a href="../zoos/alligator/index.html" class="slider__btn btn ">
+                    <img src="../../assets/grad.svg" alt="watch" class="btn__img intro-btn__img intro-btn__img-grad">
+                    <span class="btn__text intro-btn__text text-gradient">watch online</span>
+                  </a>
+                  <a href="#" class="slider__btn btn">
+                    <svg class="btn__img intro-btn__img">
+                      <use xlink:href="../../assets/intro/donate-btn.svg#donate"></use>
+                    </svg>
+                    <span class="btn__text intro-btn__text">donate</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="slider__item intro-slider__item">
+              <img src="../../assets/animals/fox.jpg" class="slider__img intro-slider__img"></img>
+              <div class="slider__desc intro-slider__desc">
+                <p class="slider__text intro-slider__text">Fox</p>
+                <div class="slider__btns intro-slider__btns">
+                  <a href="#" class="slider__btn btn ">
+                    <img src="../../assets/grad.svg" alt="watch" class="btn__img intro-btn__img intro-btn__img-grad">
+                    <span class="btn__text intro-btn__text text-gradient">watch online</span>
+                  </a>
+                  <a href="#" class="slider__btn btn">
+                    <svg class="btn__img intro-btn__img">
+                      <use xlink:href="../../assets/intro/donate-btn.svg#donate"></use>
+                    </svg>
+                    <span class="btn__text intro-btn__text">donate</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="slider__item intro-slider__item">
+              <img src="../../assets/animals/tiger.jpg" class="slider__img intro-slider__img"></img>
+              <div class="slider__desc intro-slider__desc">
+                <p class="slider__text intro-slider__text">Tiger</p>
+                <div class="slider__btns intro-slider__btns">
+                  <a href="#" class="slider__btn btn ">
+                    <img src="../../assets/grad.svg" alt="watch" class="btn__img intro-btn__img intro-btn__img-grad">
+                    <span class="btn__text intro-btn__text text-gradient">watch online</span>
+                  </a>
+                  <a href="#" class="slider__btn btn">
+                    <svg class="btn__img intro-btn__img">
+                      <use xlink:href="../../assets/intro/donate-btn.svg#donate"></use>
+                    </svg>
+                    <span class="btn__text intro-btn__text">donate</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="slider__item intro-slider__item">
+              <img src="../../assets/animals/elephants.jpg" class="slider__img intro-slider__img"></img>
+              <div class="slider__desc intro-slider__desc">
+                <p class="slider__text intro-slider__text">Elephants</p>
+                <div class="slider__btns intro-slider__btns">
+                  <a href="#" class="slider__btn btn ">
+                    <img src="../../assets/grad.svg" alt="watch" class="btn__img intro-btn__img intro-btn__img-grad">
+                    <span class="btn__text intro-btn__text text-gradient">watch online</span>
+                  </a>
+                  <a href="#" class="slider__btn btn">
+                    <svg class="btn__img intro-btn__img">
+                      <use xlink:href="../../assets/intro/donate-btn.svg#donate"></use>
+                    </svg>
+                    <span class="btn__text intro-btn__text">donate</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="slider__item intro-slider__item">
+              <img src="../../assets/animals/lion.jpg" class="slider__img intro-slider__img"></img>
+              <div class="slider__desc intro-slider__desc">
+                <p class="slider__text intro-slider__text">Lion</p>
+                <div class="slider__btns intro-slider__btns">
+                  <a href="#" class="slider__btn btn ">
+                    <img src="../../assets/grad.svg" alt="watch" class="btn__img intro-btn__img intro-btn__img-grad">
+                    <span class="btn__text intro-btn__text text-gradient">watch online</span>
+                  </a>
+                  <a href="#" class="slider__btn btn">
+                    <svg class="btn__img intro-btn__img">
+                      <use xlink:href="../../assets/intro/donate-btn.svg#donate"></use>
+                    </svg>
+                    <span class="btn__text intro-btn__text">donate</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="intro-slider__item--after">
+              <div class="intro-slider__point"></div>
+            </li>
+            <li class="intro-slider__item--after">
+              <div class="intro-slider__point"></div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="about section">
+        <div class="container">
+          <div class="about__content">
+            <h3 class="about__title title">How it works?</h3>
+            <div class="about-slider">
+              <ul class="about-slider__list">
+                <li class="about-slider__item">
+                  <p class="about-slider__text">As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat, and we are determined to assist in all aspects, including providing veterinary support and raising much-needed emergency funds. Zoo Online saves wildlife and inspires everyone to make conservation a priority in their lives. Animals have the right to a pain-free and happy life. They have equal claim to the resources of this planet, and deserve a life of dignity and compassion.As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat.</p>
+                  <img src="../../assets/animals/deers.jpg" alt="deers" class="about-slider__img">
+                </li>
+                <!-- <li class="about-slider__item">
+                  <p class="about-slider__text">As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat, and we are determined to assist in all aspects, including providing veterinary support and raising much-needed emergency funds. Zoo Online saves wildlife and inspires everyone to make conservation a priority in their lives. Animals have the right to a pain-free and happy life. They have equal claim to the resources of this planet, and deserve a life of dignity and compassion.As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat.</p>
+                  <img src="../../assets/animals/panda2.jpg" alt="panda" class="about-slider__img">
+                </li>
+                <li class="about-slider__item">
+                  <p class="about-slider__text">As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat, and we are determined to assist in all aspects, including providing veterinary support and raising much-needed emergency funds. Zoo Online saves wildlife and inspires everyone to make conservation a priority in their lives. Animals have the right to a pain-free and happy life. They have equal claim to the resources of this planet, and deserve a life of dignity and compassion.As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat.</p>
+                  <img src="../../assets/animals/monkeys.jpg" alt="monkeys" class="about-slider__img">
+                </li>
+                <li class="about-slider__item">
+                  <p class="about-slider__text">As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat, and we are determined to assist in all aspects, including providing veterinary support and raising much-needed emergency funds. Zoo Online saves wildlife and inspires everyone to make conservation a priority in their lives. Animals have the right to a pain-free and happy life. They have equal claim to the resources of this planet, and deserve a life of dignity and compassion.As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat.</p>
+                  <img src="../../assets/animals/simians.jpg" alt="simians" class="about-slider__img">
+                </li> -->
+              </ul>
+              <div class="pagination about__pagination">
+                <div class="pagination__text"><span class="pagination__curr">01</span>04</div>
+                <input type="range" class="pagination__range" min="1" max="4" value="1">
+              </div>
+              <a href="../zoos/panda/" class="btn btn--gradient btn--watch">
+                <svg class="btn__img btn--watch__img">
+                  <use xlink:href="../../assets/watch.svg#watch"></use>
+                </svg>
+                <span class="btn__text btn--watch__text">watch online</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cards section">
+        <div class="container">
+          <ul class="cards__list">
+            <li class="cards__item">
+              <img class="cards__img" src="../../assets/cards/card1.svg" alt="card">
+              <div class="cards__desc">
+                <h4 class="cards__subtitle subtitle">What inspires us?</h4>
+                <p class="cards__text">As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat, and we are determined to assist in all aspects.</p>
+              </div>
+            </li>
+            <li class="cards__item">
+              <img class="cards__img" src="../../assets/cards/card2.svg" alt="card">
+              <div class="cards__desc">
+                <h4 class="cards__subtitle subtitle">Our mission</h4>
+                <p class="cards__text">Zoo Online saves wildlife and inspires everyone to make conservation a priority in their lives. </p>
+              </div>
+            </li>
+            <li class="cards__item">
+              <img class="cards__img" src="../../assets/cards/card3.svg" alt="card">
+              <div class="cards__desc">
+                <h4 class="cards__subtitle subtitle">What we believe in?</h4>
+                <p class="cards__text">Animals have the right to a pain-free and happy life. They have equal claim to the resources of this planet, and deserve a life of dignity and compassion.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="pets section">
+        <div class="container pets__container">
+          <h3 class="title pets__title">Pets in Zoo</h3>
+          <div class="pets__slider">
+            <div class="slider__content">
+              <button class="slider__prev">
+                <svg class="slider-btn__img">
+                  <use xlink:href="../../assets/arrow.svg#arr"></use>
+                </svg>
+              </button>
+              <div class="pets-slider__wrap-list">
+                <ul class="slider__list pets-slider__list">
+                  <li class="slider__item pets-slider__item slider__item--active">
+                    <img src="../../assets/animals/panda.jpg" alt="panda" class="slider__img pets-slider__img">
+                    <div class="slider__desc pets-slider__desc">
+                      <p class="slider__text pets-slider__text">Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves bamboos.</p>
+                      <div class="slider__btns pets-slider__btns">
+                        <a href="../zoos/panda/index.html" class="slider__btn btn ">
+                          <img src="../../assets/grad.svg" alt="watch" class="btn__img intro-btn__img intro-btn__img-grad">
+                          <span class="btn__text intro-btn__text text-gradient">watch online</span>
+                        </a>
+                        <a href="#" class="slider__btn btn">
+                          <svg class="btn__img pets-btn__img">
+                            <use xlink:href="../../assets/intro/donate-btn.svg#donate"></use>
+                          </svg>
+                          <span class="btn__text pets-btn__text">donate</span>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="slider__item pets-slider__item">
+                    <img src="../../assets/animals/eagles.jpg" alt="eagles" class="slider__img pets-slider__img">
+                    <div class="slider__desc pets-slider__desc">
+                      <p class="slider__text pets-slider__text">Eagles</p>
+                      <div class="slider__btns pets-slider__btns">
+                        <a href="../zoos/eagles/index.html" class="slider__btn btn ">
+                          <img src="../../assets/grad.svg" alt="watch" class="btn__img intro-btn__img intro-btn__img-grad">
+                          <span class="btn__text intro-btn__text text-gradient">watch online</span>
+                        </a>
+                        <a href="#" class="slider__btn btn">
+                          <svg class="btn__img pets-btn__img">
+                            <use xlink:href="../../assets/intro/donate-btn.svg#donate"></use>
+                          </svg>
+                          <span class="btn__text pets-btn__text">donate</span>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="slider__item pets-slider__item">
+                    <img src="../../assets/animals/gorilla.jpg" alt="gorilla" class="slider__img pets-slider__img">
+                    <div class="slider__desc pets-slider__desc">
+                      <p class="slider__text pets-slider__text">Gorilla</p>
+                      <div class="slider__btns pets-slider__btns">
+                        <a href="../zoos/gorilla/index.html" class="slider__btn btn ">
+                          <img src="../../assets/grad.svg" alt="watch" class="btn__img intro-btn__img intro-btn__img-grad">
+                          <span class="btn__text intro-btn__text text-gradient">watch online</span>
+                        </a>
+                        <a href="#" class="slider__btn btn">
+                          <svg class="btn__img pets-btn__img">
+                            <use xlink:href="../../assets/intro/donate-btn.svg#donate"></use>
+                          </svg>
+                          <span class="btn__text pets-btn__text">donate</span>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="slider__item pets-slider__item">
+                    <img src="../../assets/animals/alligator.jpg" alt="alligator" class="slider__img pets-slider__img">
+                    <div class="slider__desc pets-slider__desc">
+                      <p class="slider__text pets-slider__text">Alligator</p>
+                      <div class="slider__btns pets-slider__btns">
+                        <a href="../zoos/alligator/index.html" class="slider__btn btn ">
+                          <img src="../../assets/grad.svg" alt="watch" class="btn__img intro-btn__img intro-btn__img-grad">
+                          <span class="btn__text intro-btn__text text-gradient">watch online</span>
+                        </a>
+                        <a href="#" class="slider__btn btn">
+                          <svg class="btn__img pets-btn__img">
+                            <use xlink:href="../../assets/intro/donate-btn.svg#donate"></use>
+                          </svg>
+                          <span class="btn__text pets-btn__text">donate</span>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="slider__item pets-slider__item">
+                    <img src="../../assets/animals/fox.jpg" alt="fox" class="slider__img pets-slider__img">
+                    <div class="slider__desc pets-slider__desc">
+                      <p class="slider__text pets-slider__text">Fox</p>
+                      <div class="slider__btns pets-slider__btns">
+                        <a href="#" class="slider__btn btn ">
+                          <img src="../../assets/grad.svg" alt="watch" class="btn__img intro-btn__img intro-btn__img-grad">
+                          <span class="btn__text intro-btn__text text-gradient">watch online</span>
+                        </a>
+                        <a href="#" class="slider__btn btn">
+                          <svg class="btn__img pets-btn__img">
+                            <use xlink:href="../../assets/intro/donate-btn.svg#donate"></use>
+                          </svg>
+                          <span class="btn__text pets-btn__text">donate</span>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="slider__item pets-slider__item">
+                    <img src="../../assets/animals/tiger.jpg" alt="tiger" class="slider__img pets-slider__img">
+                    <div class="slider__desc pets-slider__desc">
+                      <p class="slider__text pets-slider__text">Tiger</p>
+                      <div class="slider__btns pets-slider__btns">
+                        <a href="#" class="slider__btn btn ">
+                          <img src="../../assets/grad.svg" alt="watch" class="btn__img intro-btn__img intro-btn__img-grad">
+                          <span class="btn__text intro-btn__text text-gradient">watch online</span>
+                        </a>
+                        <a href="#" class="slider__btn btn">
+                          <svg class="btn__img pets-btn__img">
+                            <use xlink:href="../../assets/intro/donate-btn.svg#donate"></use>
+                          </svg>
+                          <span class="btn__text pets-btn__text">donate</span>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="slider__item pets-slider__item">
+                    <img src="../../assets/animals/elephants.jpg" alt="elephants" class="slider__img pets-slider__img">
+                    <div class="slider__desc pets-slider__desc">
+                      <p class="slider__text pets-slider__text">Elephants</p>
+                      <div class="slider__btns pets-slider__btns">
+                        <a href="#" class="slider__btn btn ">
+                          <img src="../../assets/grad.svg" alt="watch" class="btn__img intro-btn__img intro-btn__img-grad">
+                          <span class="btn__text intro-btn__text text-gradient">watch online</span>
+                        </a>
+                        <a href="#" class="slider__btn btn">
+                          <svg class="btn__img pets-btn__img">
+                            <use xlink:href="../../assets/intro/donate-btn.svg#donate"></use>
+                          </svg>
+                          <span class="btn__text pets-btn__text">donate</span>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="slider__item pets-slider__item">
+                    <img src="../../assets/animals/lion.jpg" alt="lion" class="slider__img pets-slider__img">
+                    <div class="slider__desc pets-slider__desc">
+                      <p class="slider__text pets-slider__text">Lion</p>
+                      <div class="slider__btns pets-slider__btns">
+                        <a href="#" class="slider__btn btn ">
+                          <img src="../../assets/grad.svg" alt="watch" class="btn__img intro-btn__img intro-btn__img-grad">
+                          <span class="btn__text intro-btn__text text-gradient">watch online</span>
+                        </a>
+                        <a href="#" class="slider__btn btn">
+                          <svg class="btn__img pets-btn__img">
+                            <use xlink:href="../../assets/intro/donate-btn.svg#donate"></use>
+                          </svg>
+                          <span class="btn__text pets-btn__text">donate</span>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <button class="slider__next">
+                <svg class="slider-btn__img">
+                  <use xlink:href="../../assets/arrow.svg#arr"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="pagination pets__pagination">
+              <div class="pagination__text"><span class="pagination__curr">01</span>08</div>
+              <input type="range" class="pagination__range" min="1" max="8" value="1">
+            </div>
+            <a href="../map/index.html" class="btn btn--gradient pets__btn">
+              Choose your favorite
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="donation section">
+        <div class="container donation__container">
+          <h3 class="title donation__title">Pay and feed</h3>
+          <p class="donation__desc">The opportunity to easily and naturally (but as often as possible) donate to the needs of animals that you like.</p>
+          <ul class="donation__list">
+            <li class="donation__item">
+              <img src="../../assets/donation/donate1.svg" alt="pay card" class="donation__img">
+              <h4 class="donation__subtitle subtitle">You pay with a VISA card</h4>
+            </li>
+            <li class="donation__item">
+              <img src="../../assets/donation/donate2.svg" alt="zoo" class="donation__img">
+              <h4 class="donation__subtitle subtitle">Payment goes to the Zoo</h4>
+            </li>
+            <li class="donation__item">
+              <img src="../../assets/donation/donate3.svg" alt="animal" class="donation__img">
+              <h4 class="donation__subtitle subtitle">Panda gets the bamboo</h4>
+            </li>
+          </ul>
+          <a href="#" class="btn btn--gradient donation__btn">
+            Donate
+          </a>
+        </div>
+      </section>
+      <section class="testimonial section">
+        <div class="container testimonial__container">
+          <h3 class="title testimonial__title">Testimonials</h3>
+          <div class="slider__content testimonial__content">
+            <button class="slider__prev">
+              <svg class="slider-btn__img">
+                <use xlink:href="../../assets/arrow.svg#arr"></use>
+              </svg>
+            </button>
+            <ul class="slider testimonial__list">
+              <li class="slider__item testimonial__item">
+                <div class="testimonial__img-block">
+                </div>
+                <h4 class="testimonial__subtitle subtitle">Nastya Sidorova</h4>
+                <p class="testimonial__text">As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat.</p>
+              </li>
+              <li class="slider__item testimonial__item">
+                <div class="testimonial__img-block">
+                  <img src="../../assets/testimonials/testimonail2.jpg" alt="author's testimonial" class="testimonial__img">
+                </div>
+                <h4 class="testimonial__subtitle subtitle">Vlad Kim</h4>
+                <p class="testimonial__text">As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat.</p>
+              </li>
+            </ul>
+            <button class="slider__next">
+              <svg class="slider-btn__img">
+                <use xlink:href="../../assets/arrow.svg#arr"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="pagination testimonial__pagination">
+            <div class="pagination__text"><span class="pagination__curr">02</span>08</div>
+            <input type="range" class="pagination__range" min="1" max="8" value="2">
+          </div>
+          <a href="#" class="btn btn--gradient testimonial__btn">
+            Leave feedback
+          </a>
+        </div>
+      </section>
+      <section class="map section">
+        <div class="container map__container">
+          <h3 class="title map__title">Map</h3>
+          <div class="map__image">
+            <ul class="markers">
+              <li class="markers__item markers--eagles">
+                <div class="markers__img-block">
+                  <img src="../../assets/animals/eagles.jpg" alt="map marker" class="markers__img">
+                </div>
+                <div class="map__tooltip tooltip">
+                  <img src="../../assets/animals/eagles.jpg" alt="animal" class="tooltip__img">
+                  <div class="tooltip__desc">
+                    <div class="tooltip__animal">West End Bald Eagle</div>
+                    <p class="tooltip__text">
+                      <span class="tooltip__bold">Region:</span> on an island near Los Angeles
+                      <span class="tooltip__bold">Population:</span> more than 270 pairs in 2013
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="markers__item markers--alligator">
+                <div class="markers__img-block">
+                  <img src="../../assets/animals/alligator.jpg" alt="map marker" class="markers__img">
+                </div>
+                <div class="map__tooltip tooltip">
+                  <img src="../../assets/animals/alligator.jpg" alt="animal" class="tooltip__img">
+                  <div class="tooltip__desc">
+                    <div class="tooltip__animal">West End Bald Eagle</div>
+                    <p class="tooltip__text">
+                      <span class="tooltip__bold">Region:</span> on an island near Los Angeles
+                      <span class="tooltip__bold">Population:</span> more than 270 pairs in 2013
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="markers__item markers--gorilla">
+                <div class="markers__img-block">
+                  <img src="../../assets/animals/gorilla.jpg" alt="map marker" class="markers__img">
+                </div>
+                <div class="map__tooltip tooltip">
+                  <img src="../../assets/animals/gorilla.jpg" alt="animal" class="tooltip__img">
+                  <div class="tooltip__desc">
+                    <div class="tooltip__animal">West End Bald Eagle</div>
+                    <p class="tooltip__text">
+                      <span class="tooltip__bold">Region:</span> on an island near Los Angeles
+                      <span class="tooltip__bold">Population:</span> more than 270 pairs in 2013
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="markers__item markers--panda">
+                <div class="markers__img-block">
+                  <img src="../../assets/animals/panda.jpg" alt="map marker" class="markers__img">
+                </div>
+                <div class="map__tooltip tooltip">
+                  <img src="../../assets/animals/panda.jpg" alt="animal" class="tooltip__img">
+                  <div class="tooltip__desc">
+                    <div class="tooltip__animal">Panda</div>
+                    <p class="tooltip__text">
+                      <span class="tooltip__bold">Region:</span> on an island near Los Angeles
+                      <span class="tooltip__bold">Population:</span> more than 270 pairs in 2013
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <a href="../zoos/panda/" class="btn btn--gradient btn--watch map__btn">
+            <svg class="btn__img btn--watch__img">
+              <use xlink:href="../../assets/watch.svg#watch"></use>
+            </svg>
+            <span class="btn__text btn--watch__text">watch online</span>
+          </a>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__column">
+            <a href="#header" class="logo">
+              <img class="logo__img" src="../../assets/header/logo-dark.png" alt="logo">
+            </a>
+            <h4 class="footer__title" id="contacts">Contact us</h4>
+            <form class="footer__form form">
+              <input type="text" name="name" placeholder="Name" class="form__input form__field form__row" required>
+              <input type="email" name="email" placeholder="Email" class="form__input form__field form__row" required>
+              <fieldset class="form__fieldset form__row">
+                <legend class="form__legend">Please enter your message</legend>
+                <textarea name="message" maxlength="280" rows="6" class="form__field form__textarea" required></textarea>
+              </fieldset>
+              <label class="form__row form__checkbox-block">
+                <input type="checkbox" name="agree" class="form__checkbox" required>
+                <span class="form__checkbox-text">I agree to the processing of Personal Data</span>
+              </label>
+              <button type="submit" class="btn form__btn form__row">
+                <span>send</span>
+                <img class="form__arrow" src="../../assets/form-arrow.svg" alt="arrow">
+              </button>
+            </form>
+          </div>
+          <div class="footer__column footer__double-column">
+            <div class="footer__column-content">
+              <nav class="nav footer__nav">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a href="#header" class="nav__link">About</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="../zoos/panda/index.html" class="nav__link">Zoos</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="../map/index.html" class="nav__link">Map</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp" class="nav__link">Design</a>
+                  </li>
+                </ul>
+              </nav>
+              <address class="footer__contacts contacts">
+                <div class="contacts__title">ZOO Online Centre</div>
+                <div class="contacts__address">
+                  132, Address District, Street
+                  Open Daily 10:00 am - 5:00 pm
+                </div>
+                <div class="contacts__links">
+                  <a href="tel:+7021633433" class="contacts__phone">T(702) 163-3433</a>
+                  <a href="mailto:zoo.online@gmail.com" class="contacts__email">zoo.online@gmail.com</a>
+                </div>
+              </address>
+              <ul class="social footer__social">
+                <li class="social__item">
+                  <a href="https://www.instagram.com/" class="social__link">
+                    <svg class="social__img">
+                      <use xlink:href="../../assets/social/social-sprite.svg#inst"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="https://twitter.com/" class="social__link">
+                    <svg class="social__img">
+                      <use xlink:href="../../assets/social/social-sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="https://www.youtube.com/" class="social__link">
+                    <svg class="social__img">
+                      <use xlink:href="../../assets/social/social-sprite.svg#youtube"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="https://vk.com/" class="social__link">
+                    <svg class="social__img">
+                      <use xlink:href="../../assets/social/social-sprite.svg#vk"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn--gradient footer__btn">
+              donate for volunteers
+            </a>
+          </div>
+        </div>
+        <div class="footer__copyright copyright">
+          <div class="copyright__designer">©Noora Sagnayeva</div>
+          <div class="copyright__school">©RSSchool and ©Yem Digital - 2021</div>
+        </div>
+      </div>
+    </footer>
+    <div class="popup hidden">
+      <div class="popup__aside">
+      </div>
+      <div class="popup__main">
+        <h3 class="popup__title">Donate for your animal </h3>
+        <form class="popup__form">
+          <div class="popup__row">
+            <fieldset class="popup__fieldset">
+              <legend class="popup__legend">Сhoose an animal</legend>
+              <div class="popup__field-wrap">
+                <select class="popup__field popup__select" name="animals">
+                  <option value="panda">Panda</option>
+                  <option value="alligator">Alligator</option>
+                  <option value="gorilla">Gorilla</option>
+                  <option value="eagles">Eagles</option>
+                </select>
+              </div>
+            </fieldset>
+            <fieldset class="popup__fieldset">
+              <legend class="popup__legend">To donate</legend>
+              <input type="text" name="sum" class="popup__input popup__field">
+            </fieldset>
+          </div>
+          <div class="popup__columns">
+            <div class="popup__column">
+              <h4 class="popup__subtitle">About you</h4>
+              <fieldset class="popup__fieldset popup-column__fildset">
+                <legend class="popup__legend">Name</legend>
+                <input type="text" name="name" class="popup__input popup__field">
+              </fieldset>
+              <fieldset class="popup__fieldset popup-column__fildset">
+                <legend class="popup__legend">Email</legend>
+                <input type="email" name="email" class="popup__input popup__field">
+              </fieldset>
+              <fieldset class="popup__fieldset popup-column__fildset">
+                <legend class="popup__legend">Phone</legend>
+                <div class="popup__field-wrap popup__double popup__phone">
+                  <select name="phone-code" class="popup__field popup__select">
+                    <option value="rus">+7</option>
+                    <option value="blr">+375</option>
+                    <option value="ukr">+380</option>
+                  </select>
+                </div>
+                <input type="text" name="phone" class="popup__input popup__field popup__double">
+              </fieldset>
+            </div>
+            <div class="popup__column">
+              <h4 class="popup__subtitle">Checkout</h4>
+              <fieldset class="popup__fieldset popup-column__fildset">
+                <legend class="popup__legend">Card number</legend>
+                <input type="text" name="card" class="popup__input popup__field">
+              </fieldset>
+              <fieldset class="popup__fieldset popup-column__fildset">
+                <legend class="popup__legend">Expiry date</legend>
+                <div class="popup__field-wrap popup__double">
+                  <select name="month" class="popup__field popup__select">
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select>
+                </div>
+                <div class="popup__field-wrap popup__double">
+                  <select name="year" class="popup__field popup__select">
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                  </select>
+                </div>
+              </fieldset>
+              <fieldset class="popup__fieldset popup-column__fildset">
+                <legend class="popup__legend">CVC</legend>
+                <input type="text" name="CVC" class="popup__input popup__field">
+              </fieldset>
+            </div>
+          </div>
+          <div class="popup__footer">
+            <p class="popup__text">If don’t cancel your subscription before the trial ends on April 15, 2021, you agree that you will automatically be charged</p>
+            <input type="submit" class="btn btn--gradient popup__btn" value="donate">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="../theme-switcher.js"></script>
+  <script src="./intro-slider.js"></script>
+  <script src="./pets-slider.js"></script>
+</body>
+</html>

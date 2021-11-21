@@ -1,0 +1,161 @@
+.testimonial {
+  padding: rem(100px) 0;
+
+  @include notebook{
+    .slider__next {
+      right: rem(-30px);
+    }
+
+    .slider__prev {
+      left: rem(-30px);
+    }
+  }
+
+  @include tablets {
+    .slider__next, .slider__prev {
+      display: none;
+    }
+  }
+
+  @include phones {
+    padding: rem(50px) 0;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include notebook {
+      width: 77%;
+    }
+
+    @include tablets {
+      width: 91%;
+    }
+  }
+  
+  &__content {
+    margin-top: rem(60px);
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+
+    @include notebook {
+      width: 100%;
+    }
+
+    @include tablets {
+      flex-wrap: wrap;
+      overflow-y: hidden;
+      height: rem(300px);
+    }
+
+    @include phones {
+      height: rem(340px);
+    }
+  }
+
+  &__item {
+    background-color: var(--testimonial-block);
+    box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.1);
+    border-radius: 5px;
+    width: 50%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: rem(51px) rem(76px) rem(105px);
+
+    @include notebook {
+      padding: rem(51px) rem(52px) rem(90px);
+    }
+
+    @include tablets {
+      width: 100%;
+      height: 100%;
+      padding: rem(32px) 12% rem(90px);
+    }
+
+    @include phones {
+      padding: rem(27px) rem(10px);
+    }
+
+    &:first-child{
+      margin-right: rem(20px);
+
+      @include notebook {
+        margin-right: rem(28px);
+      }
+
+      @include tablets {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__img-block {
+    width: rem(68px);
+    height: rem(68px);
+    background: url("../../assets/testimonials/user.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 1px solid $gray4;
+    border-radius: 50%;
+  }
+
+  &__img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__subtitle {
+    margin-top: rem(15px);
+
+    @include notebook {
+      margin-top: 17px;
+    }
+
+    @include phones {
+      margin-top: rem(47px);
+      font-size: rem(16px);
+      line-height: rem(19px);
+    }
+  }
+
+  &__text {
+    margin-top: rem(17px);
+    font-size: rem(14px);
+    line-height: rem(16px);
+    color: var(--paragraph-color);
+  }
+
+  &__pagination {
+    margin-top: rem(50px);
+
+    @include notebook {
+      margin-top: rem(47px);
+    }
+
+    @include phones {
+      margin-top: rem(40px);
+      .pagination__range {
+        width: 84%;
+      }
+    }
+  }
+
+  &__btn {
+    margin-top: rem(31px);
+    padding: rem(18px) rem(49px) rem(16px);
+
+    @include phones {
+      margin-top: rem(21px);
+    }
+  }
+}

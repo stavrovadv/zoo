@@ -1,0 +1,248 @@
+.page-animal {
+  background-color: var(--bg-other-pages);
+  padding: rem(60px) 0 rem(98px);
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+
+  @include notebook {
+    padding-top: rem(59px);
+    padding-bottom: rem(94px);
+  }
+
+  @include tablets {
+    padding-top: rem(58px);
+    padding-bottom: rem(80px);
+  }
+
+  @include phones {
+    padding-top: rem(22px);
+    padding-bottom: rem(67px);
+  }
+
+  &__content {
+    margin-top: rem(40px);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    @include tablets {
+      margin-top: rem(35px);
+      flex-direction: column;
+    }
+
+    @include phones {
+      margin-top: rem(22px);
+    }
+  }
+
+  &__main {
+    position: relative;
+    left: 3px;
+    width: 100%;
+
+    @include tablets {
+      left: 0;
+    }
+
+    @include phones {
+      top: 10px;
+    }
+  }
+
+  &__title {
+    text-align: left;
+
+    @include phones {
+      font-size: rem(24px);
+      line-height: rem(28px);
+      padding-right: 5px;
+      position: relative;
+      left: 5px;
+    }
+  }
+
+  &__media {
+    overflow: hidden;
+    width: 50%;
+    margin-right: rem(36px);
+
+    @include notebook {
+      width: 52%;
+      margin-right: rem(24px);
+    }
+
+    @include tablets {
+      width: 96%;
+      margin-right: rem(20px);
+    }
+
+    @include phones {
+      width: 91%;
+    }
+  }
+
+  &__desc {
+    width: 25%;
+
+    @include notebook {
+      width: 26%;
+    }
+
+    @include tablets {
+      width: 95%;
+      margin-top: rem(46px);
+    }
+
+    @include phones {
+      width: 93%;
+      margin-top: rem(27px);
+    }
+  }
+
+  &__desc-item:not(:first-child) {
+    margin-top: rem(13px);
+
+    @include notebook {
+      margin-top: rem(17px);
+    }
+
+    @include tablets {
+      margin-top: rem(13px);
+    }
+
+    @include phones {
+      margin-top: rem(19px);
+    }
+  }
+
+  &__subtitle {
+    font-weight: 900;
+    font-size: rem(20px);
+    line-height: rem(23px);
+    color: var(--main-font);
+
+    @include phones {
+      font-size: rem(14px);
+      line-height: rem(16px);
+    }
+  }
+
+  &__text {
+    margin-top: 6px;
+    font-size: rem(14px);
+    line-height: rem(16px);
+    color: var(--paragraph-color);
+
+    @include phones {
+      font-size: rem(12px);
+      line-height: rem(14px);
+    }
+  }
+
+  &__btn {
+    margin-top: rem(35px);
+    padding: rem(17px) rem(76px);
+    width: auto;
+
+    @include notebook {
+      margin-top: rem(20px);
+      padding: 6% 27%;
+    }
+
+    @include tablets {
+      margin-top: rem(33px);
+      padding: 3% 14%;
+    }
+
+    @include phones {
+      padding: 8% 34%;
+      margin-top: rem(16px);
+    }
+  }
+}
+
+.media {
+  &__main-video {
+    width: 100%;
+    height: rem(443px);
+
+    @include notebook {
+      height: rem(297px);
+    }
+
+    @include tablets{
+      height: rem(279px);
+    }
+
+    @include phones {
+      height: rem(116px);
+    }
+  }
+
+  &__list {
+    display: flex;
+    position: relative;
+    // pointer-events: none;
+    margin-top: rem(25px);
+    width: 100%;
+
+    @include tablets {
+      margin-top: rem(14px);
+    }
+
+    @include phones {
+      margin-top: rem(6px);
+      flex-wrap: wrap;
+      overflow: hidden;
+      height: rem(56px);
+    }
+  }
+
+  &__item {
+    width: 100%;
+    height: rem(141px);
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: rem(150px);
+      background-color: white;
+      opacity: 0;
+    }
+
+    @include notebook {
+      height: rem(94px);
+    }
+
+    @include tablets {
+      height: rem(89px);
+    }
+
+    @include phones {
+      width: calc(50% - 4.5px);
+      height: rem(56px);
+    }
+
+    &:not(:last-child) {
+      margin-right: rem(26px);
+
+      @include phones {
+        margin-right: 0;
+      }
+    }
+
+    &:not(:nth-child(2n)) {
+      @include phones {
+        margin-right: rem(9px);
+      }
+    }
+  }
+
+  &__preview {
+    width: 100%;
+    height: 100%;
+  }
+}

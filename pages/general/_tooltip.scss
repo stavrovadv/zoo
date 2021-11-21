@@ -1,0 +1,63 @@
+.tooltip {
+  width: rem(436px);
+  position: absolute;
+  top: rem(55px);
+  right: rem(135px);
+  background-color: var(--tooltip);
+  box-shadow: 2px 4px rem(15px) rgba(6, 12, 70, 0.15);
+  border-radius: 8px;
+  padding: rem(40px) rem(55px) rem(40px) rem(45px);
+  color: var(--main-font);
+  font-size: rem(14px);
+  line-height: rem(16px);
+
+  @include notebook {
+    left: 0;
+  }
+
+  @include phones {
+    width: rem(238px);
+    height: rem(113px);
+    font-size: rem(10px);
+    line-height: rem(11px);
+    padding: rem(15px) rem(16px);
+  }
+
+  &__img {
+    flex-shrink: 0;
+    width: rem(65px);
+    height: rem(65px);
+    border-radius: 50%;
+    margin-right: rem(20px);
+
+    @include phones {
+      width: rem(40px);
+      height: rem(40px);
+      margin-right: rem(8px);
+    }
+  }
+
+  &__animal {
+    font-weight: 900;
+    font-size: rem(18px);
+    line-height: rem(21px);
+
+    @include phones {
+      font-size: rem(14px);
+      line-height: rem(16px);
+    }
+  }
+
+  &__text {
+    margin-top: 7px;
+    color: var(--paragraph-color);
+
+    @include phones {
+      width: rem(150px);
+    }
+  }
+
+  &__bold {
+    font-weight: 500;
+  }
+}
