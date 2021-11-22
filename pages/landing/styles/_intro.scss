@@ -61,12 +61,8 @@
       margin-top: 20%;
     }
 
-    @media (max-width: 434px) {
-      margin-top: 10%;
-    }
-
     @include phones {
-      margin-top: 30%;
+      margin-top: 25%;
     }
   }
 
@@ -117,13 +113,10 @@
 }
 
 .intro-slider {
-  // max-width: rem(1087px);
-  // width: 76%;
   display: flex;
   flex-direction: column;
   position: absolute;
   bottom: rem(120px);
-  // right: rem(-43px);
   left: 50%;
   flex-wrap: wrap;
 
@@ -132,21 +125,21 @@
   //   left: 51%;
   // }
 
-  // @include notebook {
+  @include notebook {
   //   width: 61%;
-  //   left: 51%;
+    left: 35%;
   //   bottom: rem(97px);
-  // }
+  }
 
   @include tablets {
-    width: 100%;
-    left: 19%;
+    // width: 100%;
+    left: 35%;
     bottom: 14%;
   }
 
   @include phones {
     left: 8%;
-    bottom: 9%;
+    bottom: 6%;
   }
 
   &__list {
@@ -161,7 +154,7 @@
       width: 100%;
       height: 1px;
       position: absolute;
-      top: 48%;
+      top: 49%;
       left: 0;
   }
   }
@@ -172,7 +165,7 @@
     z-index: 1;
     position: relative;
     cursor: pointer;
-    transition: 1s;
+    // transition: 1s;
     // animation-timing-function: linear;
 
     @include notebook {
@@ -240,9 +233,7 @@
   &__item--active{
     width: rem(245px);
     height: rem(352px);
-    // position: relative;
-    // top: rem(-15px);
-    transition: 1s;
+    // transition: 1s;
 
     .slider__desc{
       display: block;

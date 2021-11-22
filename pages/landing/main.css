@@ -1129,6 +1129,13 @@ input:checked + .round:before {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    gap: 75px;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer__content {
+    gap: 0;
   }
 }
 
@@ -1264,7 +1271,6 @@ input:checked + .round:before {
 @media (max-width: 1200px) {
   .footer__double-column {
     left: 0;
-    margin-left: 4.6875rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1845,15 +1851,9 @@ input:checked + .round:before {
   }
 }
 
-@media (max-width: 434px) {
-  .intro__content {
-    margin-top: 10%;
-  }
-}
-
 @media (max-width: 480px) {
   .intro__content {
-    margin-top: 30%;
+    margin-top: 25%;
   }
 }
 
@@ -1925,10 +1925,15 @@ input:checked + .round:before {
       flex-wrap: wrap;
 }
 
+@media (max-width: 1200px) {
+  .intro-slider {
+    left: 35%;
+  }
+}
+
 @media (max-width: 640px) {
   .intro-slider {
-    width: 100%;
-    left: 19%;
+    left: 35%;
     bottom: 14%;
   }
 }
@@ -1936,7 +1941,7 @@ input:checked + .round:before {
 @media (max-width: 480px) {
   .intro-slider {
     left: 8%;
-    bottom: 9%;
+    bottom: 6%;
   }
 }
 
@@ -1955,7 +1960,7 @@ input:checked + .round:before {
   width: 100%;
   height: 1px;
   position: absolute;
-  top: 48%;
+  top: 49%;
   left: 0;
 }
 
@@ -1965,8 +1970,6 @@ input:checked + .round:before {
   z-index: 1;
   position: relative;
   cursor: pointer;
-  -webkit-transition: 1s;
-  transition: 1s;
 }
 
 @media (max-width: 1200px) {
@@ -2039,8 +2042,6 @@ input:checked + .round:before {
 .intro-slider__item--active {
   width: 15.3125rem;
   height: 22rem;
-  -webkit-transition: 1s;
-  transition: 1s;
 }
 
 .intro-slider__item--active .slider__desc {
@@ -2295,6 +2296,20 @@ input:checked + .round:before {
   }
 }
 
+.about-slider__list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.about-slider__item {
+  min-width: 100%;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
 .about-slider__text {
   color: var(--paragraph-color);
   font-size: 0.875rem;
@@ -2327,7 +2342,7 @@ input:checked + .round:before {
 
 @media (max-width: 480px) {
   .about-slider__img {
-    width: 18.75rem;
+    width: 100%;
     height: 20.1875rem;
     -o-object-position: 8% center;
        object-position: 8% center;
@@ -2645,6 +2660,7 @@ input:checked + .round:before {
 
 @media (max-width: 480px) {
   .pets-slider__item {
+    width: 48%;
     height: 18.8125rem;
   }
 }

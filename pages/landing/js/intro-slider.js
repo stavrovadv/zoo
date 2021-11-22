@@ -33,7 +33,7 @@ function hiddenElements(from, to){
 
 document.addEventListener("DOMContentLoaded", function(){
   hiddenAdditionalPoints();
-  hiddenElements(5, items.length);
+  hiddenElements(5, introItems.length);
 });
 
 function changePaginationValues(){
@@ -67,26 +67,5 @@ introPagination.addEventListener("input", function(){
 introItems.forEach((item, ind) => {
   item.addEventListener("click", function(){
     changeActive(ind);
-    
-    // if(currNumb === 1){
-    //   beforeItems[1].classList.remove("hidden-item");
-    // }
-    // else {
-    //   if(currNumb === introItems.length){
-    //     afterItems[0].classList.remove("hidden-item");
-    //   }
-  //     if(introItems[(ind-1)].classList.contains("hidden-item")){
-  //       introItems[(ind-1)].classList.remove("hidden-item");
-  //       setHiddenItems.delete((ind-1));
-  //     }
-  //   // }
-
-  //   while(setHiddenItems.size > 3){
-  //     if(introItems.length > (currNumb+2)){
-  //       introItems[(currNumb+2)].classList.remove("hidden-item");
-  //       setHiddenItems.delete((currNumb+2));
-  //     }
-  //     else break;
-  //   }
   })
 });

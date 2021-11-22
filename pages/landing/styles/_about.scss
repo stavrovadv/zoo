@@ -31,6 +31,17 @@
     }
   }
 
+  &-slider__list {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+  }
+
+  &-slider__item {
+    min-width: 100%;
+    transform: translateX(0px);
+  }
+
   &-slider__text {
     color: var(--paragraph-color);
     font-size: rem(14px);
@@ -55,7 +66,7 @@
     }
 
     @include phones {
-      width: rem(300px);
+      width: 100%;
       height: rem(323px);
       object-position: 8% center;
       margin-top: 11%;
