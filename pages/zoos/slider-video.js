@@ -18,12 +18,17 @@ function hiddenAllItems() {
   });
 }
 
-list.addEventListener("click", function(e){
-  let clickedVideo = e.target.firstElementChild;
-  let littleVideoLink = clickedVideo.src;
-  clickedVideo.src = mainVideo.src;
-  mainVideo.src = littleVideoLink;
-});
+list.addEventListener("click", (e) => changeVideo(e));
+
+function changeVideo(e) {
+  let clickedPreview = e.target.children[0];
+  clickedPreview.src = `https://i.ytimg.com/vi/${mainVideo.dataset.id}/hqdefault.jpg`;
+  mainVideo.src = `https://www.youtube.com/embed/${clickedPreview.dataset.id}`;
+
+  let clickedDataId = clickedPreview.dataset.id;
+  clickedPreview.dataset.id = mainVideo.dataset.id;
+  mainVideo.dataset.id = clickedDataId;
+}
 
 controlsItem.forEach((elem, ind) => {
   elem.addEventListener("click", function(e){
