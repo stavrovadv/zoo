@@ -1,4 +1,5 @@
 .testimonial {
+  width: 100%;
   padding: rem(100px) 0;
 
   @include notebook{
@@ -25,36 +26,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    @include notebook {
-      width: 77%;
-    }
-
-    @include tablets {
-      width: 91%;
-    }
+    overflow: hidden;
   }
   
   &__content {
     margin-top: rem(60px);
+    width: 100%;
   }
 
   &__list {
     display: flex;
-    justify-content: center;
     width: 75%;
-
-    @include notebook {
-      width: 100%;
-    }
+    height: 100%;
+    overflow: hidden;
 
     @include tablets {
-      flex-wrap: wrap;
-      overflow-y: hidden;
       height: rem(300px);
     }
 
     @include phones {
+      width: 100%;
       height: rem(340px);
     }
   }
@@ -63,28 +54,28 @@
     background-color: var(--testimonial-block);
     box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.1);
     border-radius: 5px;
-    width: 50%;
-    max-width: 100%;
+    min-width: 48%;
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: rem(51px) rem(76px) rem(105px);
+    transform: translateX(0px);
 
     @include notebook {
       padding: rem(51px) rem(52px) rem(90px);
     }
 
     @include tablets {
-      width: 100%;
-      height: 100%;
       padding: rem(32px) 12% rem(90px);
     }
 
     @include phones {
+      min-width: 49%;
       padding: rem(27px) rem(10px);
     }
 
-    &:first-child{
+    // &:nth-child(even){
       margin-right: rem(20px);
 
       @include notebook {
@@ -94,7 +85,7 @@
       @include tablets {
         margin-right: 0;
       }
-    }
+    // }
   }
 
   &__img-block {

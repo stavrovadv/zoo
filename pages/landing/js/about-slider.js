@@ -8,7 +8,7 @@
   let currTranslateX = 0;
 
   let widthItem = items[0].getBoundingClientRect().width;
-
+  
   window.addEventListener("resize", function() {
     widthItem = items[0].getBoundingClientRect().width;
     changeActive();

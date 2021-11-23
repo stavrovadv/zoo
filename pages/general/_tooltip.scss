@@ -61,3 +61,14 @@
     font-weight: 500;
   }
 }
+
+.markers--eagles, 
+.markers--alligator {
+  .tooltip{
+    left: rem(135px);
+  
+    @include notebook {
+      left: 0;
+    }
+  }
+}

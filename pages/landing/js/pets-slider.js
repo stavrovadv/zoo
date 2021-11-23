@@ -1,8 +1,6 @@
 (function() {
-  let slider = document.querySelector(".pets__slider .slider__content");
   let btnPrev = document.querySelector(".pets__slider .slider__prev");
   let btnNext = document.querySelector(".pets__slider .slider__next");
-  let list = document.querySelector(".pets-slider__list");
   let items = document.querySelectorAll(".pets__slider .slider__item");
   let pagination = document.querySelector(".pets__slider .pagination__range");
   let paginationText = document.querySelector(".pets__slider .pagination__curr");

@@ -453,6 +453,7 @@ svg {
 
 .section {
   width: 100%;
+  overflow: hidden;
 }
 
 .container {
@@ -1091,6 +1092,18 @@ input:checked + .round:before {
 
 .tooltip__bold {
   font-weight: 500;
+}
+
+.markers--eagles .tooltip,
+.markers--alligator .tooltip {
+  left: 8.4375rem;
+}
+
+@media (max-width: 1200px) {
+  .markers--eagles .tooltip,
+  .markers--alligator .tooltip {
+    left: 0;
+  }
 }
 
 .footer {
